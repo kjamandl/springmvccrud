@@ -25,7 +25,7 @@ public String getSystemTime(){
 public void addUser(){
 	User user = new User();
 	user.setUserName("Kishore");
-	user.setEmailId("kjamandl@gmail.com");
+	user.setUserEmail("kjamandl2@gmail.com");
 	getSessionFactory().getCurrentSession().save(user);	
 	System.out.println("No flush.User added...");
 	

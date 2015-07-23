@@ -16,7 +16,7 @@ public class User {
 	private Long userId;
 	@Column(name="USER_NAME")
 	private String userName;
-	@Column(name="USER_EMAIL")
+	@Column(name="EMAIL_ID")
 	private String userEmail;
 	public Long getUserId() {
 		return userId;

@@ -7,12 +7,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.jk.myapp.dao.HomeDAO;
+import com.jk.myapp.dao.IHomeDAO;
 
 @Controller
 public class HomeController {
 	@Autowired
-	private HomeDAO homeDao;
+	private IHomeDAO homeDao;
 	@Autowired
 	private SessionFactory sessionFactory;
 	public SessionFactory getSessionFactory() {
@@ -34,11 +34,11 @@ public class HomeController {
 		this.dataSource = dataSource;
 	}
 
-	public HomeDAO getHomeDao() {
+	public IHomeDAO getHomeDao() {
 		return homeDao;
 	}
 
-	public void setHomeDao(HomeDAO homeDao) {
+	public void setHomeDao(IHomeDAO homeDao) {
 		this.homeDao = homeDao;
 	}
 

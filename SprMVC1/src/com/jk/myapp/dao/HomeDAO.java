@@ -46,6 +46,6 @@ public void removeUser(Long userId){
 	getSessionFactory().getCurrentSession().delete(getUser(userId));
 }
 public List<User> getAllUsers(){
-	
+return null;	
 }
 }
